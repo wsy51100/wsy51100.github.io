@@ -3,7 +3,7 @@ window.PHOTOGRAPHY_DATA = {
   "albums": [
     {
       "id": "b",
-      "title": "Series B",
+      "title": "Bonn, Germany",
       "count": 13,
       "cover": "thumbs/b01.jpg?v=f4d777e93cf2",
       "coverWidth": 900,
@@ -117,7 +117,7 @@ window.PHOTOGRAPHY_DATA = {
     },
     {
       "id": "d",
-      "title": "Series D",
+      "title": "Dun Huang, China",
       "count": 2,
       "cover": "thumbs/d01.jpg?v=d3cb93c9828b",
       "coverWidth": 900,
@@ -143,7 +143,7 @@ window.PHOTOGRAPHY_DATA = {
     },
     {
       "id": "dr",
-      "title": "Series DR",
+      "title": "Pic from Drone",
       "count": 2,
       "cover": "thumbs/dr01.jpg?v=051927b3032f",
       "coverWidth": 900,
@@ -169,7 +169,7 @@ window.PHOTOGRAPHY_DATA = {
     },
     {
       "id": "f",
-      "title": "Series F",
+      "title": "Pics from Film Camera",
       "count": 21,
       "cover": "thumbs/f01.jpg?v=8348424e3775",
       "coverWidth": 900,
@@ -347,7 +347,7 @@ window.PHOTOGRAPHY_DATA = {
     },
     {
       "id": "h",
-      "title": "Series H",
+      "title": "Ha Er Bing, China",
       "count": 4,
       "cover": "thumbs/h01.jpg?v=946b822a0e75",
       "coverWidth": 900,
@@ -389,7 +389,7 @@ window.PHOTOGRAPHY_DATA = {
     },
     {
       "id": "j",
-      "title": "Series J",
+      "title": "Japan",
       "count": 9,
       "cover": "thumbs/j01.jpg?v=797bed4cdbce",
       "coverWidth": 900,
@@ -471,7 +471,7 @@ window.PHOTOGRAPHY_DATA = {
     },
     {
       "id": "k",
-      "title": "Series K",
+      "title": "Blank",
       "count": 25,
       "cover": "thumbs/k01.jpg?v=0ac317e1da0d",
       "coverWidth": 900,
@@ -681,7 +681,7 @@ window.PHOTOGRAPHY_DATA = {
     },
     {
       "id": "n",
-      "title": "Series N",
+      "title": "Hai Nan, China",
       "count": 4,
       "cover": "thumbs/n01.jpg?v=f31847ca07c6",
       "coverWidth": 900,
@@ -723,7 +723,7 @@ window.PHOTOGRAPHY_DATA = {
     },
     {
       "id": "q",
-      "title": "Series Q",
+      "title": "Qing Dao, China",
       "count": 9,
       "cover": "thumbs/q01.jpg?v=4eed55fcd214",
       "coverWidth": 900,
@@ -805,7 +805,7 @@ window.PHOTOGRAPHY_DATA = {
     },
     {
       "id": "s",
-      "title": "Series S",
+      "title": "Random Pics",
       "count": 4,
       "cover": "thumbs/s01.jpg?v=c2f17c7109f9",
       "coverWidth": 643,
@@ -847,7 +847,7 @@ window.PHOTOGRAPHY_DATA = {
     },
     {
       "id": "x",
-      "title": "Series X",
+      "title": "Landscape Pics",
       "count": 3,
       "cover": "thumbs/x01.jpg?v=6daef6d474a7",
       "coverWidth": 600,
