@@ -25,8 +25,7 @@ nav_order: 3
 <div class="directory-layout">
 <aside class="collection-sidebar">
 <p class="eyebrow">PHOTOGRAPHIC COLLECTIONS</p>
-<h1 id="pa-directory-heading" tabindex="-1">Through<br/> the lens<span class="accent">.</span></h1>
-<p class="directory-intro">A collection of places, light,<br/> and everyday moments.</p>
+<h1 id="pa-directory-heading" tabindex="-1">COLLECTIONS<span class="accent">.</span></h1>
 <p class="directory-count" id="pa-directory-count">11 series / 97 photographs</p>
 <nav aria-label="Browse all albums" class="album-index" id="pa-album-index"></nav>
 <div class="sidebar-note"><span></span><p>Choose a collection<br/>to look a little closer.</p></div>
