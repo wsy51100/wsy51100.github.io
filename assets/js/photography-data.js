@@ -4,6 +4,7 @@ window.PHOTOGRAPHY_DATA = {
     {
       "id": "b",
       "title": "Bonn, Germany",
+      "equipment": "SonyA7M4",
       "count": 13,
       "cover": "thumbs/b01.jpg?v=f4d777e93cf2",
       "coverWidth": 900,
@@ -118,6 +119,7 @@ window.PHOTOGRAPHY_DATA = {
     {
       "id": "d",
       "title": "Dun Huang, China",
+      "equipment": "SonyA7M4",
       "count": 2,
       "cover": "thumbs/d01.jpg?v=d3cb93c9828b",
       "coverWidth": 900,
@@ -144,6 +146,7 @@ window.PHOTOGRAPHY_DATA = {
     {
       "id": "dr",
       "title": "Pic from Drone",
+      "equipment": "Dji mini2",
       "count": 2,
       "cover": "thumbs/dr01.jpg?v=051927b3032f",
       "coverWidth": 900,
@@ -170,6 +173,7 @@ window.PHOTOGRAPHY_DATA = {
     {
       "id": "f",
       "title": "Pics from Film Camera",
+      "equipment": "Kodak, Fujifilm",
       "count": 21,
       "cover": "thumbs/f01.jpg?v=8348424e3775",
       "coverWidth": 900,
@@ -348,6 +352,7 @@ window.PHOTOGRAPHY_DATA = {
     {
       "id": "h",
       "title": "Ha Er Bing, China",
+      "equipment": "SonyA7M4",
       "count": 4,
       "cover": "thumbs/h01.jpg?v=946b822a0e75",
       "coverWidth": 900,
@@ -390,6 +395,7 @@ window.PHOTOGRAPHY_DATA = {
     {
       "id": "j",
       "title": "Japan",
+      "equipment": "SonyA7M4",
       "count": 9,
       "cover": "thumbs/j01.jpg?v=797bed4cdbce",
       "coverWidth": 900,
@@ -472,6 +478,7 @@ window.PHOTOGRAPHY_DATA = {
     {
       "id": "k",
       "title": "Blank",
+      "equipment": "SonyA7M4",
       "count": 25,
       "cover": "thumbs/k01.jpg?v=0ac317e1da0d",
       "coverWidth": 900,
@@ -682,6 +689,7 @@ window.PHOTOGRAPHY_DATA = {
     {
       "id": "n",
       "title": "Hai Nan, China",
+      "equipment": "SonyA7M4",
       "count": 4,
       "cover": "thumbs/n01.jpg?v=f31847ca07c6",
       "coverWidth": 900,
@@ -724,6 +732,7 @@ window.PHOTOGRAPHY_DATA = {
     {
       "id": "q",
       "title": "Qing Dao, China",
+      "equipment": "Fujifilm XT-2",
       "count": 9,
       "cover": "thumbs/q01.jpg?v=4eed55fcd214",
       "coverWidth": 900,
@@ -806,6 +815,7 @@ window.PHOTOGRAPHY_DATA = {
     {
       "id": "s",
       "title": "Random Pics",
+      "equipment": "SonyA7M4",
       "count": 4,
       "cover": "thumbs/s01.jpg?v=c2f17c7109f9",
       "coverWidth": 643,
@@ -848,6 +858,7 @@ window.PHOTOGRAPHY_DATA = {
     {
       "id": "x",
       "title": "Landscape Pics",
+      "equipment": "SonyA7M4",
       "count": 3,
       "cover": "thumbs/x01.jpg?v=6daef6d474a7",
       "coverWidth": 600,
