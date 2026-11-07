@@ -1,0 +1,353 @@
+/* Isolated photography component; the al-folio header, footer, search and theme stay native. */
+#photography-app {
+  --bg: var(--global-bg-color, #fff);
+  --text: var(--global-text-color, #292e2e);
+  --muted: var(--global-text-color-light, #777c7a);
+  --line: var(--global-divider-color, #e0e2dc);
+  --surface: var(--global-card-bg-color, #f0f0ea);
+  --dialog: var(--global-bg-color, #fff);
+  --accent: #52766b;
+  --serif: Georgia, 'Times New Roman', serif;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.7;
+}
+html[data-theme="dark"] #photography-app { --accent: #9ebeb0; }
+#photography-app, #photography-app * { box-sizing: border-box; }
+#photography-app [hidden] { display: none !important; }
+#photography-app div, #photography-app span { color: inherit; }
+#photography-app a { color: inherit; text-decoration: none; }
+#photography-app button, #photography-app input { font: inherit; }
+#photography-app button { border: 0; color: inherit; cursor: pointer; }
+#photography-app img { display: block; max-width: 100%; }
+#photography-app h1, #photography-app h2, #photography-app p, #photography-app figure { margin: 0; }
+#photography-app h1, #photography-app h2 { font-weight: 400; }
+#photography-app a, #photography-app button, #photography-app input { outline-offset: 5px; }
+#photography-app a:focus-visible, #photography-app button:focus-visible, #photography-app input:focus-visible { outline: 2px solid var(--accent); }
+#photography-app .photo-main { width: 100%; min-width: 0; }
+#photography-app .gallery-toolbar { display: flex; justify-content: flex-end; margin: 0 0 1.5rem; }
+#photography-app .gallery-search-button { display: inline-flex; align-items: center; gap: 9px; padding: 7px 0; background: transparent; color: var(--muted); font-size: 11px; }
+#photography-app .gallery-search-button:hover { color: var(--accent); }
+#photography-app .gallery-search-button .icon { width: 16px; height: 16px; }
+body:has(#photography-app) > div.container[role="main"] { max-width: 1320px; width: calc(100% - 64px); padding-left: 0; padding-right: 0; }
+body:has(#photography-app dialog[open]) { overflow: hidden; }
+
+#photography-app h1:focus,
+#photography-app #pa-main-content:focus {outline:none}
+
+#photography-app .symbol-library {display:none}
+
+#photography-app .icon {width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+
+#photography-app .sr-only {position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+#photography-app .search-trigger {display:flex;align-items:center;gap:9px;background:none;padding:7px 0;color:var(--muted)}
+
+#photography-app .search-trigger>span {font-size:10px}
+
+#photography-app .search-trigger .icon {width:18px;height:18px}
+
+#photography-app .icon-button {width:34px;height:36px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border-radius:50%;flex-shrink:0}
+
+#photography-app .icon-button:hover,
+#photography-app .search-trigger:hover {color:var(--accent)}
+
+#photography-app .directory-layout {display:grid;grid-template-columns:225px minmax(0,1fr);gap:70px;padding:68px 0 72px}
+
+#photography-app .collection-sidebar {align-self:start;position:sticky;top:132px;max-height:calc(100dvh - 155px);overflow-y:auto;padding-right:8px;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+
+#photography-app .eyebrow {font-size:9px;line-height:1.6;letter-spacing:1.8px;color:var(--accent);font-weight:500}
+
+#photography-app .collection-sidebar h1 {font-family:var(--serif);font-size:43px;letter-spacing:-1.6px;line-height:1.17;margin:20px 0 22px}
+
+#photography-app .accent {color:var(--accent)}
+
+#photography-app .directory-intro {font-size:12px;line-height:1.85;color:var(--muted)}
+
+#photography-app .directory-count {font-size:9px;letter-spacing:.35px;color:var(--muted);margin:22px 0 29px}
+
+#photography-app .album-index {display:flex;flex-direction:column;gap:2px;padding-right:20px}
+
+#photography-app .album-index a {display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:30px;font-size:11px;padding:4px 0;color:var(--muted);transition:color .15s}
+
+#photography-app .album-index a:hover,
+#photography-app .album-index a:focus-visible {color:var(--accent)}
+
+#photography-app .album-index a span:last-child {font-size:9px;opacity:.7}
+
+#photography-app .sidebar-note {display:flex;gap:12px;align-items:flex-start;margin-top:29px}
+
+#photography-app .sidebar-note>span {width:20px;height:1px;background:var(--accent);margin-top:8px}
+
+#photography-app .sidebar-note p {font-family:var(--serif);font-size:13px;font-style:italic;color:var(--muted);line-height:1.65}
+
+#photography-app .album-covers {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:58px;align-items:start}
+
+#photography-app .cover-column {display:flex;flex-direction:column;gap:65px;min-width:0}
+
+#photography-app .cover-column:nth-child(2) {padding-top:55px}
+
+#photography-app .album-card {display:block;width:100%;align-self:center}
+
+#photography-app .album-card.portrait {width:79%}
+
+#photography-app .cover-media {background:var(--surface);position:relative}
+
+#photography-app .cover-media img {width:100%;height:auto;transition:opacity .25s}
+
+#photography-app .album-card:hover .cover-media img {opacity:.88}
+
+#photography-app .cover-caption {display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-top:14px}
+
+#photography-app .cover-caption h2 {font-size:14px;line-height:1.4;font-weight:400;letter-spacing:-.15px}
+
+#photography-app .cover-caption span {font-size:9px;color:var(--muted);white-space:nowrap}
+
+#photography-app .album-card:hover .cover-caption h2 {color:var(--accent)}
+
+#photography-app .back-link {display:inline-flex;align-items:center;gap:10px;font-size:11px;color:var(--muted);margin-top:39px}
+
+#photography-app .back-link:hover {color:var(--accent)}
+
+#photography-app .back-link .icon {width:17px;height:17px;transform:rotate(180deg)}
+
+#photography-app .album-heading {max-width:1000px;margin:45px auto 42px}
+
+#photography-app .album-title-row {display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin:14px 0 17px}
+
+#photography-app .album-title-row h1 {font-family:var(--serif);font-size:64px;line-height:1.15;letter-spacing:-2.5px}
+
+#photography-app .album-count {font-size:10px;color:var(--muted);letter-spacing:.5px}
+
+#photography-app .album-hint {font-size:12px;color:var(--muted)}
+
+#photography-app .justified-gallery {width:100%;min-height:100px;display:flex;flex-direction:column;gap:8px}
+
+#photography-app .photo-row {display:flex;gap:8px;align-items:flex-start}
+
+#photography-app .photo-tile {display:block;flex:none;position:relative;padding:0;background:var(--surface);overflow:hidden;cursor:zoom-in}
+
+#photography-app .photo-tile img {display:block;width:100%;height:100%;object-fit:contain}
+
+#photography-app .photo-filename {position:absolute;left:12px;bottom:10px;color:#fff;font-size:9px;letter-spacing:1px;text-shadow:0 1px 8px #000;opacity:0;transition:opacity .2s;pointer-events:none}
+
+#photography-app .photo-tile:hover .photo-filename,
+#photography-app .photo-tile:focus-visible .photo-filename {opacity:1}
+
+#photography-app .photo-tile:hover:after {content:"↗";position:absolute;right:11px;bottom:6px;color:white;text-shadow:0 1px 8px #000;font-size:17px;pointer-events:none}
+
+#photography-app .album-navigation {border-top:1px solid var(--line);margin:46px 0 65px;padding-top:25px;display:flex;justify-content:space-between;gap:25px;min-height:50px}
+
+#photography-app .album-navigation a {font-size:12px;color:var(--muted)}
+
+#photography-app .album-navigation a:hover {color:var(--accent)}
+
+#photography-app .next-album {margin-left:auto;text-align:right}
+
+#photography-app dialog {padding:0;background:var(--dialog);color:var(--text);border:1px solid var(--line);box-shadow:0 25px 100px #0004}
+
+#photography-app dialog::backdrop {background:#15222599;backdrop-filter:blur(5px)}
+
+#photography-app .lightbox-dialog {inset:0;margin:0;width:100vw;height:100dvh;max-width:none;max-height:none;border:0;background:#111516;color:#f0f1ed;overflow:hidden}
+
+#photography-app .lightbox-toolbar {height:66px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;position:relative;z-index:2}
+
+#photography-app .lightbox-counter {font-size:11px;letter-spacing:1px;color:#bac4bf}
+
+#photography-app .lightbox-tools {display:flex;align-items:center;gap:16px}
+
+#photography-app .lightbox-text-button {font-size:11px;letter-spacing:.5px;color:#d8dfda;background:none;padding:8px 10px}
+
+#photography-app .lightbox-text-button[aria-pressed=true] {color:#a8d7c0}
+
+#photography-app .lightbox-canvas {height:calc(100dvh - 129px);display:flex;justify-content:center;align-items:center;padding:8px 74px;overflow:hidden;touch-action:pan-y}
+
+#photography-app .lightbox-canvas img {display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;user-select:none}
+
+#photography-app .lightbox-canvas.is-zoomed {display:block;padding:0;overflow:auto;touch-action:pan-x pan-y}
+
+#photography-app .lightbox-canvas.is-zoomed img {max-width:none;max-height:none;width:auto;height:auto;margin:0 auto;cursor:zoom-out}
+
+#photography-app .lightbox-arrow {position:absolute;top:calc(50% - 20px);height:44px;width:44px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#11151670;color:#fff;z-index:2}
+
+#photography-app .lightbox-arrow:hover {background:#3e484bcc}
+
+#photography-app .lightbox-arrow .icon {width:26px;height:26px}
+
+#photography-app .lightbox-prev {left:17px}
+
+#photography-app .lightbox-next {right:17px}
+
+#photography-app .lightbox-footer {height:63px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 28px;font-size:10px;color:#aeb9b3}
+
+#photography-app .lightbox-footer>span:first-child {letter-spacing:1px;color:#d0d8d3}
+
+#photography-app .lightbox-help-divider {margin:0 10px;color:#52605a}
+
+#photography-app .search-dialog {width:min(610px,calc(100vw - 36px));max-height:80vh;margin:11vh auto auto;border-radius:8px;overflow:auto}
+
+#photography-app .search-dialog-top {display:flex;align-items:center;justify-content:space-between;padding:22px 25px 12px}
+
+#photography-app .search-dialog-top h2 {font-family:var(--serif);font-size:29px;letter-spacing:-.5px}
+
+#photography-app .search-field {display:flex;align-items:center;gap:13px;margin:5px 25px 0;padding:10px 0 17px;border-bottom:1px solid var(--line);color:var(--muted)}
+
+#photography-app .search-field input {width:100%;min-width:0;border:0;background:transparent;font-size:14px;color:var(--text);outline-offset:2px}
+
+#photography-app .search-field input::placeholder {color:var(--muted)}
+
+#photography-app .search-count {font-size:10px;color:var(--muted);padding:15px 25px 8px}
+
+#photography-app .search-results {padding:0 11px 10px;max-height:45vh;overflow:auto}
+
+#photography-app .search-result {display:block;border-radius:4px;padding:10px 14px}
+
+#photography-app .search-result:hover,
+#photography-app .search-result:focus-visible {background:var(--surface)}
+
+#photography-app .search-result-type {display:block;color:var(--accent);font-size:9px;letter-spacing:1.3px;text-transform:uppercase}
+
+#photography-app .search-result strong {font-size:14px;font-weight:400}
+
+#photography-app .search-result p {font-size:11px;color:var(--muted);margin-top:2px}
+
+#photography-app .search-empty {padding:20px 14px;color:var(--muted);font-size:13px}
+
+#photography-app .search-help {display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:12px 25px;font-size:10px;color:var(--muted)}
+
+#photography-app kbd {font-family:inherit;font-size:9px;padding:2px 5px;border:1px solid var(--line);border-radius:3px}
+
+#photography-app .noscript-message {padding:20px;text-align:center}
+
+@media (min-width:1550px) {
+#photography-app .directory-layout {gap:90px;grid-template-columns:245px minmax(0,1fr)}
+
+#photography-app .album-covers {gap:75px}
+
+#photography-app .cover-column {gap:80px}
+
+#photography-app .cover-column:nth-child(2) {padding-top:85px}
+}
+
+@media (max-width:1100px) {
+#photography-app .directory-layout {grid-template-columns:190px minmax(0,1fr);gap:40px;padding-top:55px}
+
+#photography-app .collection-sidebar h1 {font-size:37px}
+
+#photography-app .album-covers {gap:32px}
+
+#photography-app .cover-column {gap:48px}
+
+#photography-app .cover-column:nth-child(2) {padding-top:42px}
+
+#photography-app .cover-caption {flex-wrap:wrap;gap:3px 10px}
+
+#photography-app .cover-caption h2 {font-size:13px}
+
+#photography-app .cover-caption span {font-size:8px}
+}
+
+@media (max-width:760px) {
+#photography-app .directory-layout {grid-template-columns:minmax(0,1fr);gap:35px;padding-top:38px;padding-bottom:45px}
+
+#photography-app .collection-sidebar {position:static;max-height:none;overflow:visible;padding-right:0}
+
+#photography-app .collection-sidebar h1 {font-size:42px;line-height:1.15;margin:16px 0 15px}
+
+#photography-app .collection-sidebar h1 br {display:none}
+
+#photography-app .collection-sidebar h1 br:after {content:" "}
+
+#photography-app .directory-intro {font-size:13px}
+
+#photography-app .directory-intro br {display:none}
+
+#photography-app .directory-count {margin:18px 0;font-size:10px}
+
+#photography-app .album-index {flex-direction:row;overflow:auto;gap:21px;padding:0 0 10px;border-bottom:1px solid var(--line);scrollbar-width:thin}
+
+#photography-app .album-index a {flex:none;white-space:nowrap;gap:7px;min-height:28px;font-size:11px}
+
+#photography-app .album-index a span:last-child {display:none}
+
+#photography-app .sidebar-note {display:none}
+
+#photography-app .album-covers {display:flex;flex-direction:column;gap:0}
+
+#photography-app .cover-column {display:contents}
+
+#photography-app .album-card {order:var(--album-order,0);margin-bottom:43px}
+
+#photography-app .album-card.portrait {width:80%;align-self:center}
+
+#photography-app .cover-caption {margin-top:12px;flex-wrap:nowrap}
+
+#photography-app .cover-caption h2 {font-size:15px}
+
+#photography-app .cover-caption span {font-size:10px}
+
+#photography-app .back-link {margin-top:28px}
+
+#photography-app .album-heading {margin:32px 0 30px}
+
+#photography-app .album-title-row {margin:12px 0 15px;gap:15px}
+
+#photography-app .album-title-row h1 {font-size:48px;letter-spacing:-1.7px}
+
+#photography-app .album-count {font-size:9px;text-align:right}
+
+#photography-app .album-hint {font-size:11px;max-width:300px;line-height:1.8}
+
+#photography-app .album-navigation {margin:35px 0 43px;padding-top:21px}
+
+#photography-app .album-navigation a {font-size:11px}
+
+#photography-app .lightbox-toolbar {padding:0 15px;height:57px}
+
+#photography-app .lightbox-tools {gap:8px}
+
+#photography-app .lightbox-canvas {height:calc(100dvh - 115px);padding:8px 12px}
+
+#photography-app .lightbox-arrow {width:34px;height:40px;background:#11151650}
+
+#photography-app .lightbox-prev {left:4px}
+
+#photography-app .lightbox-next {right:4px}
+
+#photography-app .lightbox-arrow .icon {width:23px;height:23px}
+
+#photography-app .lightbox-footer {height:58px;padding:0 15px;font-size:9px;gap:10px}
+
+#photography-app .lightbox-help-divider {margin:0 5px}
+
+#photography-app .search-dialog {margin-top:7vh}
+
+#photography-app .search-dialog-top {padding:18px 20px 10px}
+
+#photography-app .search-field {margin-left:20px;margin-right:20px}
+
+#photography-app .search-field input {font-size:12px}
+
+#photography-app .search-help {padding-left:20px;padding-right:20px}
+}
+
+#photography-app .cover-caption .cover-count {margin-left:auto}
+
+#photography-app .cover-caption .cover-arrow {font-size:13px;color:var(--accent);opacity:0}
+
+#photography-app .album-card:hover .cover-arrow,
+#photography-app .album-card:focus-visible .cover-arrow {opacity:1}
+
+#photography-app .collection-sidebar,
+#photography-app .album-covers,
+#photography-app .album-card {min-width:0}
+
+#photography-app .directory-layout { padding-top: 0; }
+#photography-app .album-index { padding-left: 0; }
+#photography-app .back-link { margin-top: 0; }
+#photography-app .album-navigation a { color: var(--muted); }
+@media (max-width: 760px) {
+  body:has(#photography-app) > div.container[role="main"] { width: calc(100% - 40px); }
+  #photography-app .directory-layout { padding-top: 0; }
+  #photography-app .gallery-toolbar { margin-bottom: 1.25rem; }
+}
