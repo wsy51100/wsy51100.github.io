@@ -1,0 +1,10 @@
+---
+layout: default
+---
+{% capture photography_site_name %}{% if site.title == 'blank' %}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
+<link rel="stylesheet" href="{{ '/assets/photography/photography-albums.css' | relative_url }}">
+<div id="photography-app" data-asset-root="{{ '/assets/photography/' | relative_url }}" data-site-name="{{ photography_site_name | strip | escape }}">
+  {{ content }}
+</div>
+<script defer src="{{ '/assets/js/photography-data.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/photography-albums.js' | relative_url }}"></script>

@@ -1,0 +1,891 @@
+window.PHOTOGRAPHY_DATA = {
+  "totalPhotos": 97,
+  "albums": [
+    {
+      "id": "b",
+      "title": "Series B",
+      "count": 13,
+      "cover": "thumbs/b01.jpg",
+      "coverWidth": 900,
+      "coverHeight": 600,
+      "photos": [
+        {
+          "id": "b01",
+          "filename": "b01.jpg",
+          "thumb": "thumbs/b01.jpg",
+          "src": "full/b01.jpg",
+          "width": 1602,
+          "height": 1068
+        },
+        {
+          "id": "b02",
+          "filename": "b02.jpg",
+          "thumb": "thumbs/b02.jpg",
+          "src": "full/b02.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "b03",
+          "filename": "b03.jpg",
+          "thumb": "thumbs/b03.jpg",
+          "src": "full/b03.jpg",
+          "width": 1599,
+          "height": 2400
+        },
+        {
+          "id": "b04",
+          "filename": "b04.jpg",
+          "thumb": "thumbs/b04.jpg",
+          "src": "full/b04.jpg",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "id": "b05",
+          "filename": "b05.jpg",
+          "thumb": "thumbs/b05.jpg",
+          "src": "full/b05.jpg",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "id": "b06",
+          "filename": "b06.jpg",
+          "thumb": "thumbs/b06.jpg",
+          "src": "full/b06.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "b07",
+          "filename": "b07.jpg",
+          "thumb": "thumbs/b07.jpg",
+          "src": "full/b07.jpg",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "id": "b08",
+          "filename": "b08.jpg",
+          "thumb": "thumbs/b08.jpg",
+          "src": "full/b08.jpg",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "id": "b09",
+          "filename": "b09.jpg",
+          "thumb": "thumbs/b09.jpg",
+          "src": "full/b09.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "b10",
+          "filename": "b10.jpg",
+          "thumb": "thumbs/b10.jpg",
+          "src": "full/b10.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "b11",
+          "filename": "b11.jpg",
+          "thumb": "thumbs/b11.jpg",
+          "src": "full/b11.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "b12",
+          "filename": "b12.jpg",
+          "thumb": "thumbs/b12.jpg",
+          "src": "full/b12.jpg",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "id": "b13",
+          "filename": "b13.jpg",
+          "thumb": "thumbs/b13.jpg",
+          "src": "full/b13.jpg",
+          "width": 1600,
+          "height": 2400
+        }
+      ]
+    },
+    {
+      "id": "d",
+      "title": "Series D",
+      "count": 2,
+      "cover": "thumbs/d01.jpg",
+      "coverWidth": 900,
+      "coverHeight": 600,
+      "photos": [
+        {
+          "id": "d01",
+          "filename": "d01.jpg",
+          "thumb": "thumbs/d01.jpg",
+          "src": "full/d01.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "d02",
+          "filename": "d02.jpg",
+          "thumb": "thumbs/d02.jpg",
+          "src": "full/d02.jpg",
+          "width": 1600,
+          "height": 2400
+        }
+      ]
+    },
+    {
+      "id": "dr",
+      "title": "Series DR",
+      "count": 2,
+      "cover": "thumbs/dr01.jpg",
+      "coverWidth": 900,
+      "coverHeight": 506,
+      "photos": [
+        {
+          "id": "dr01",
+          "filename": "dr01.jpg",
+          "thumb": "thumbs/dr01.jpg",
+          "src": "full/dr01.jpg",
+          "width": 2400,
+          "height": 1350
+        },
+        {
+          "id": "dr02",
+          "filename": "dr02.jpg",
+          "thumb": "thumbs/dr02.jpg",
+          "src": "full/dr02.jpg",
+          "width": 2400,
+          "height": 1350
+        }
+      ]
+    },
+    {
+      "id": "f",
+      "title": "Series F",
+      "count": 21,
+      "cover": "thumbs/f01.jpg",
+      "coverWidth": 900,
+      "coverHeight": 612,
+      "photos": [
+        {
+          "id": "f01",
+          "filename": "f01.jpg",
+          "thumb": "thumbs/f01.jpg",
+          "src": "full/f01.jpg",
+          "width": 2400,
+          "height": 1633
+        },
+        {
+          "id": "f02",
+          "filename": "f02.jpg",
+          "thumb": "thumbs/f02.jpg",
+          "src": "full/f02.jpg",
+          "width": 2400,
+          "height": 1632
+        },
+        {
+          "id": "f03",
+          "filename": "f03.jpg",
+          "thumb": "thumbs/f03.jpg",
+          "src": "full/f03.jpg",
+          "width": 2400,
+          "height": 1632
+        },
+        {
+          "id": "f04",
+          "filename": "f04.jpg",
+          "thumb": "thumbs/f04.jpg",
+          "src": "full/f04.jpg",
+          "width": 2400,
+          "height": 1632
+        },
+        {
+          "id": "f05",
+          "filename": "f05.jpg",
+          "thumb": "thumbs/f05.jpg",
+          "src": "full/f05.jpg",
+          "width": 2400,
+          "height": 1632
+        },
+        {
+          "id": "f06",
+          "filename": "f06.jpg",
+          "thumb": "thumbs/f06.jpg",
+          "src": "full/f06.jpg",
+          "width": 2400,
+          "height": 1632
+        },
+        {
+          "id": "f07",
+          "filename": "f07.jpg",
+          "thumb": "thumbs/f07.jpg",
+          "src": "full/f07.jpg",
+          "width": 2400,
+          "height": 1631
+        },
+        {
+          "id": "f08",
+          "filename": "f08.jpg",
+          "thumb": "thumbs/f08.jpg",
+          "src": "full/f08.jpg",
+          "width": 2400,
+          "height": 1632
+        },
+        {
+          "id": "f09",
+          "filename": "f09.jpg",
+          "thumb": "thumbs/f09.jpg",
+          "src": "full/f09.jpg",
+          "width": 2400,
+          "height": 1632
+        },
+        {
+          "id": "f10",
+          "filename": "f10.jpg",
+          "thumb": "thumbs/f10.jpg",
+          "src": "full/f10.jpg",
+          "width": 2400,
+          "height": 1632
+        },
+        {
+          "id": "f11",
+          "filename": "f11.jpg",
+          "thumb": "thumbs/f11.jpg",
+          "src": "full/f11.jpg",
+          "width": 2400,
+          "height": 1632
+        },
+        {
+          "id": "f12",
+          "filename": "f12.jpg",
+          "thumb": "thumbs/f12.jpg",
+          "src": "full/f12.jpg",
+          "width": 2400,
+          "height": 1632
+        },
+        {
+          "id": "f13",
+          "filename": "f13.jpg",
+          "thumb": "thumbs/f13.jpg",
+          "src": "full/f13.jpg",
+          "width": 2400,
+          "height": 1632
+        },
+        {
+          "id": "f14",
+          "filename": "f14.jpg",
+          "thumb": "thumbs/f14.jpg",
+          "src": "full/f14.jpg",
+          "width": 2400,
+          "height": 1632
+        },
+        {
+          "id": "f15",
+          "filename": "f15.jpg",
+          "thumb": "thumbs/f15.jpg",
+          "src": "full/f15.jpg",
+          "width": 2400,
+          "height": 1632
+        },
+        {
+          "id": "f16",
+          "filename": "f16.jpg",
+          "thumb": "thumbs/f16.jpg",
+          "src": "full/f16.jpg",
+          "width": 2400,
+          "height": 1632
+        },
+        {
+          "id": "f17",
+          "filename": "f17.jpg",
+          "thumb": "thumbs/f17.jpg",
+          "src": "full/f17.jpg",
+          "width": 2400,
+          "height": 1632
+        },
+        {
+          "id": "f18",
+          "filename": "f18.jpg",
+          "thumb": "thumbs/f18.jpg",
+          "src": "full/f18.jpg",
+          "width": 2400,
+          "height": 1632
+        },
+        {
+          "id": "f19",
+          "filename": "f19.jpg",
+          "thumb": "thumbs/f19.jpg",
+          "src": "full/f19.jpg",
+          "width": 2400,
+          "height": 1632
+        },
+        {
+          "id": "f20",
+          "filename": "f20.jpg",
+          "thumb": "thumbs/f20.jpg",
+          "src": "full/f20.jpg",
+          "width": 2400,
+          "height": 1632
+        },
+        {
+          "id": "f21",
+          "filename": "f21.jpg",
+          "thumb": "thumbs/f21.jpg",
+          "src": "full/f21.jpg",
+          "width": 1536,
+          "height": 1024
+        }
+      ]
+    },
+    {
+      "id": "h",
+      "title": "Series H",
+      "count": 4,
+      "cover": "thumbs/h01.jpg",
+      "coverWidth": 600,
+      "coverHeight": 900,
+      "photos": [
+        {
+          "id": "h01",
+          "filename": "h01.jpg",
+          "thumb": "thumbs/h01.jpg",
+          "src": "full/h01.jpg",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "id": "h02",
+          "filename": "h02.jpg",
+          "thumb": "thumbs/h02.jpg",
+          "src": "full/h02.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "h03",
+          "filename": "h03.jpg",
+          "thumb": "thumbs/h03.jpg",
+          "src": "full/h03.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "h04",
+          "filename": "h04.jpg",
+          "thumb": "thumbs/h04.jpg",
+          "src": "full/h04.jpg",
+          "width": 2400,
+          "height": 1600
+        }
+      ]
+    },
+    {
+      "id": "j",
+      "title": "Series J",
+      "count": 9,
+      "cover": "thumbs/j01.jpg",
+      "coverWidth": 900,
+      "coverHeight": 600,
+      "photos": [
+        {
+          "id": "j01",
+          "filename": "j01.jpg",
+          "thumb": "thumbs/j01.jpg",
+          "src": "full/j01.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "j02",
+          "filename": "j02.jpg",
+          "thumb": "thumbs/j02.jpg",
+          "src": "full/j02.jpg",
+          "width": 1920,
+          "height": 2400
+        },
+        {
+          "id": "j03",
+          "filename": "j03.jpg",
+          "thumb": "thumbs/j03.jpg",
+          "src": "full/j03.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "j04",
+          "filename": "j04.jpg",
+          "thumb": "thumbs/j04.jpg",
+          "src": "full/j04.jpg",
+          "width": 1920,
+          "height": 2400
+        },
+        {
+          "id": "j05",
+          "filename": "j05.jpg",
+          "thumb": "thumbs/j05.jpg",
+          "src": "full/j05.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "j06",
+          "filename": "j06.jpg",
+          "thumb": "thumbs/j06.jpg",
+          "src": "full/j06.jpg",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "id": "j07",
+          "filename": "j07.jpg",
+          "thumb": "thumbs/j07.jpg",
+          "src": "full/j07.jpg",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "id": "j08",
+          "filename": "j08.jpg",
+          "thumb": "thumbs/j08.jpg",
+          "src": "full/j08.jpg",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "id": "j09",
+          "filename": "j09.jpg",
+          "thumb": "thumbs/j09.jpg",
+          "src": "full/j09.jpg",
+          "width": 1600,
+          "height": 2400
+        }
+      ]
+    },
+    {
+      "id": "k",
+      "title": "Series K",
+      "count": 25,
+      "cover": "thumbs/k01.jpg",
+      "coverWidth": 900,
+      "coverHeight": 600,
+      "photos": [
+        {
+          "id": "k01",
+          "filename": "k01.jpg",
+          "thumb": "thumbs/k01.jpg",
+          "src": "full/k01.jpg",
+          "width": 1248,
+          "height": 832
+        },
+        {
+          "id": "k02",
+          "filename": "k02.jpg",
+          "thumb": "thumbs/k02.jpg",
+          "src": "full/k02.jpg",
+          "width": 1248,
+          "height": 832
+        },
+        {
+          "id": "k03",
+          "filename": "k03.jpg",
+          "thumb": "thumbs/k03.jpg",
+          "src": "full/k03.jpg",
+          "width": 2400,
+          "height": 1800
+        },
+        {
+          "id": "k04",
+          "filename": "k04.jpg",
+          "thumb": "thumbs/k04.jpg",
+          "src": "full/k04.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "k05",
+          "filename": "k05.jpg",
+          "thumb": "thumbs/k05.jpg",
+          "src": "full/k05.jpg",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "id": "k06",
+          "filename": "k06.jpg",
+          "thumb": "thumbs/k06.jpg",
+          "src": "full/k06.jpg",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "id": "k07",
+          "filename": "k07.jpg",
+          "thumb": "thumbs/k07.jpg",
+          "src": "full/k07.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "k08",
+          "filename": "k08.jpg",
+          "thumb": "thumbs/k08.jpg",
+          "src": "full/k08.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "k09",
+          "filename": "k09.jpg",
+          "thumb": "thumbs/k09.jpg",
+          "src": "full/k09.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "k10",
+          "filename": "k10.jpg",
+          "thumb": "thumbs/k10.jpg",
+          "src": "full/k10.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "k11",
+          "filename": "k11.jpg",
+          "thumb": "thumbs/k11.jpg",
+          "src": "full/k11.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "k12",
+          "filename": "k12.jpg",
+          "thumb": "thumbs/k12.jpg",
+          "src": "full/k12.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "k13",
+          "filename": "k13.jpg",
+          "thumb": "thumbs/k13.jpg",
+          "src": "full/k13.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "k14",
+          "filename": "k14.jpg",
+          "thumb": "thumbs/k14.jpg",
+          "src": "full/k14.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "k15",
+          "filename": "k15.jpg",
+          "thumb": "thumbs/k15.jpg",
+          "src": "full/k15.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "k16",
+          "filename": "k16.jpg",
+          "thumb": "thumbs/k16.jpg",
+          "src": "full/k16.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "k17",
+          "filename": "k17.jpg",
+          "thumb": "thumbs/k17.jpg",
+          "src": "full/k17.jpg",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "id": "k18",
+          "filename": "k18.jpg",
+          "thumb": "thumbs/k18.jpg",
+          "src": "full/k18.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "k19",
+          "filename": "k19.jpg",
+          "thumb": "thumbs/k19.jpg",
+          "src": "full/k19.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "k20",
+          "filename": "k20.jpg",
+          "thumb": "thumbs/k20.jpg",
+          "src": "full/k20.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "k21",
+          "filename": "k21.jpg",
+          "thumb": "thumbs/k21.jpg",
+          "src": "full/k21.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "k22",
+          "filename": "k22.jpg",
+          "thumb": "thumbs/k22.jpg",
+          "src": "full/k22.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "k23",
+          "filename": "k23.jpg",
+          "thumb": "thumbs/k23.jpg",
+          "src": "full/k23.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "k24",
+          "filename": "k24.jpg",
+          "thumb": "thumbs/k24.jpg",
+          "src": "full/k24.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "k25",
+          "filename": "k25.jpg",
+          "thumb": "thumbs/k25.jpg",
+          "src": "full/k25.jpg",
+          "width": 2400,
+          "height": 1600
+        }
+      ]
+    },
+    {
+      "id": "n",
+      "title": "Series N",
+      "count": 4,
+      "cover": "thumbs/n01.jpg",
+      "coverWidth": 900,
+      "coverHeight": 600,
+      "photos": [
+        {
+          "id": "n01",
+          "filename": "n01.jpg",
+          "thumb": "thumbs/n01.jpg",
+          "src": "full/n01.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "n02",
+          "filename": "n02.jpg",
+          "thumb": "thumbs/n02.jpg",
+          "src": "full/n02.jpg",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "id": "n03",
+          "filename": "n03.jpg",
+          "thumb": "thumbs/n03.jpg",
+          "src": "full/n03.jpg",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "id": "n04",
+          "filename": "n04.jpg",
+          "thumb": "thumbs/n04.jpg",
+          "src": "full/n04.jpg",
+          "width": 1600,
+          "height": 2400
+        }
+      ]
+    },
+    {
+      "id": "q",
+      "title": "Series Q",
+      "count": 10,
+      "cover": "thumbs/q01.jpg",
+      "coverWidth": 600,
+      "coverHeight": 900,
+      "photos": [
+        {
+          "id": "q01",
+          "filename": "q01.jpg",
+          "thumb": "thumbs/q01.jpg",
+          "src": "full/q01.jpg",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "id": "q02",
+          "filename": "q02.jpg",
+          "thumb": "thumbs/q02.jpg",
+          "src": "full/q02.jpg",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "id": "q03",
+          "filename": "q03.jpg",
+          "thumb": "thumbs/q03.jpg",
+          "src": "full/q03.jpg",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "id": "q04",
+          "filename": "q04.jpg",
+          "thumb": "thumbs/q04.jpg",
+          "src": "full/q04.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "q05",
+          "filename": "q05.jpg",
+          "thumb": "thumbs/q05.jpg",
+          "src": "full/q05.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "q06",
+          "filename": "q06.jpg",
+          "thumb": "thumbs/q06.jpg",
+          "src": "full/q06.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "q07",
+          "filename": "q07.jpg",
+          "thumb": "thumbs/q07.jpg",
+          "src": "full/q07.jpg",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "id": "q08",
+          "filename": "q08.jpg",
+          "thumb": "thumbs/q08.jpg",
+          "src": "full/q08.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "q09",
+          "filename": "q09.jpg",
+          "thumb": "thumbs/q09.jpg",
+          "src": "full/q09.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "q10",
+          "filename": "q10.jpg",
+          "thumb": "thumbs/q10.jpg",
+          "src": "full/q10.jpg",
+          "width": 1600,
+          "height": 2400
+        }
+      ]
+    },
+    {
+      "id": "s",
+      "title": "Series S",
+      "count": 4,
+      "cover": "thumbs/s01.jpg",
+      "coverWidth": 643,
+      "coverHeight": 900,
+      "photos": [
+        {
+          "id": "s01",
+          "filename": "s01.jpg",
+          "thumb": "thumbs/s01.jpg",
+          "src": "full/s01.jpg",
+          "width": 1714,
+          "height": 2400
+        },
+        {
+          "id": "s02",
+          "filename": "s02.jpg",
+          "thumb": "thumbs/s02.jpg",
+          "src": "full/s02.jpg",
+          "width": 1280,
+          "height": 1920
+        },
+        {
+          "id": "s03",
+          "filename": "s03.jpg",
+          "thumb": "thumbs/s03.jpg",
+          "src": "full/s03.jpg",
+          "width": 897,
+          "height": 598
+        },
+        {
+          "id": "s04",
+          "filename": "s04.jpg",
+          "thumb": "thumbs/s04.jpg",
+          "src": "full/s04.jpg",
+          "width": 1920,
+          "height": 2400
+        }
+      ]
+    },
+    {
+      "id": "x",
+      "title": "Series X",
+      "count": 3,
+      "cover": "thumbs/x01.jpg",
+      "coverWidth": 600,
+      "coverHeight": 900,
+      "photos": [
+        {
+          "id": "x01",
+          "filename": "x01.jpg",
+          "thumb": "thumbs/x01.jpg",
+          "src": "full/x01.jpg",
+          "width": 1600,
+          "height": 2400
+        },
+        {
+          "id": "x02",
+          "filename": "x02.jpg",
+          "thumb": "thumbs/x02.jpg",
+          "src": "full/x02.jpg",
+          "width": 2400,
+          "height": 1600
+        },
+        {
+          "id": "x03",
+          "filename": "x03.jpg",
+          "thumb": "thumbs/x03.jpg",
+          "src": "full/x03.jpg",
+          "width": 1600,
+          "height": 2400
+        }
+      ]
+    }
+  ]
+};
