@@ -7,7 +7,7 @@ nav: true
 nav_order: 3
 
 photos:
-  - image: assets/img/photo-01.jpg
+  - image: assets/img/DSC03794.JPG
     title: "Your first photograph"
     alt: "Describe what is visible in your first photograph."
     caption: "Location · Year"
