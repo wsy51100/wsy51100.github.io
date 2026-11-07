@@ -3,7 +3,7 @@ layout: about
 title: About
 permalink: /
 nav: false
-subtitle: "[Your programme] · [Your university]"
+subtitle: "Geodetic Engineering · University of Bonn"
 
 profile: false
 selected_papers: false
@@ -16,8 +16,7 @@ latest_posts:
   enabled: false
 ---
 
-I am Shuyi Wu, a master's student in [Your programme] at
-[Your university]. My work focuses on [Your research interests].
+Hi, I am Shuyi Wu. I am currently pursuing an M.Sc. in Geodetic Engineering at the University of Bonn, specializing in Mobile Sensing and Robotics. I hold a B.Sc. in Geoinformation from Jiangxi Normal University. My research interests include semantic segmentation, LiDAR–camera fusion, implicit neural mapping and point cloud processing. My master’s thesis explores the use of vision foundation models in multi-sensor implicit SLAM, integrating visual features with LiDAR point clouds for 3D scene understanding and semantic mapping.
 
 This website brings together my selected projects, publications,
 and photography. Outside my academic work, I enjoy exploring
