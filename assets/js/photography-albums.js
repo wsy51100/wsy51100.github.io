@@ -225,6 +225,12 @@
       const eyebrow = root.querySelector("#pa-album-eyebrow");
       const count = root.querySelector("#pa-album-count");
       if (title) title.textContent = nextAlbum.title;
+      const hint = root.querySelector(".album-hint");
+      if (hint) {
+        const equipment = String(nextAlbum.equipment || "").trim();
+        hint.textContent = equipment;
+        hint.hidden = !equipment;
+      }
       if (eyebrow) eyebrow.textContent = `COLLECTION ${nextAlbum.id.toUpperCase()}`;
       if (count) count.textContent = countLabel(photoCount(nextAlbum));
       const index = albums.indexOf(nextAlbum);
