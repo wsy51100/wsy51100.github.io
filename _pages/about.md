@@ -5,7 +5,10 @@ permalink: /
 nav: false
 subtitle: "Geodetic Engineering · University of Bonn"
 
-profile: false
+profile: 
+  align: right
+  image: profile.jpg
+  image_circular: false
 selected_papers: false
 social: false
 
