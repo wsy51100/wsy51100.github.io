@@ -7,6 +7,11 @@ nav: true
 nav_order: 1
 display_categories: [work, fun]
 horizontal: false
+_styles: |
+  .projects h2.category {
+    text-align: left;
+    color: var(--global-text-color);
+  }
 ---
 
 <!-- pages/projects.md -->
@@ -15,7 +20,13 @@ horizontal: false
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}
   <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
+    <h2 class="category">
+      {% case category %}
+        {% when "work" %}Master Projects
+        {% when "fun" %}Bachelor Projects
+        {% else %}{{ category }}
+      {% endcase %}
+    </h2>
   </a>
   {% assign categorized_projects = site.projects | where: "category", category %}
   {% assign sorted_projects = categorized_projects | sort: "importance" %}
