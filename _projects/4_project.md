@@ -2,7 +2,7 @@
 layout: page
 title: "Research on the Application of Spatial Information Technology in the Digital Protection of Ancient Memorial Archway"
 description: "Undergraduate Thesis"
-img:
+img: assets/img/ug-thesis/DJI_0027.JPG
 importance: 3
 category: fun
 related_publications: false
