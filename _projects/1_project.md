@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 1
+title: Leveraging Vision Foundation Models for Semantic Implicit Multi-Sensor SLAM
 description: with background image
 img: assets/img/12.jpg
 importance: 1
 category: work
-redirect: "https://wsy51100.github.io/Master_Thesis/#abstract"
+redirect: "https://wsy51100.github.io/Master_Thesis/"
 related_publications: true
 ---
 
