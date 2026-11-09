@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Digital Documentation of the Jimei Memorial Archway"
+title: "Research on the Application of Spatial Information Technology in the Digital Protection of Ancient Memorial Archway"
 description: "Undergraduate Thesis"
 img:
 importance: 3
@@ -65,10 +65,10 @@ _styles: |
 
 <!-- 00 项目信息：只替换 dd 标签里面的文字。 -->
 <dl class="ug-meta">
-  <div><dt>Field</dt><dd>[填写专业 / 研究方向]</dd></div>
-  <div><dt>Institution</dt><dd>[填写学校 / 团队]</dd></div>
-  <div><dt>Date</dt><dd>[填写项目时间]</dd></div>
-  <div><dt>Role</dt><dd>[填写个人角色]</dd></div>
+  <div><dt>Field</dt><dd>[Photogrammetry, 3D reconstruction]</dd></div>
+  <div><dt>Institution</dt><dd>[Jiangxi Normal University]</dd></div>
+  <div><dt>Date</dt><dd>[2023.05]</dd></div>
+  <div><dt>Supervisor</dt><dd>[Hanwu Zhang]</dd></div>
 </dl>
 
 <!-- 主图：后续只将 ug-figure-placeholder 这个 div 替换为 img，保留 figure 与 figcaption。 -->
@@ -86,11 +86,24 @@ _styles: |
   <div class="ug-section-body ug-columns">
     <div class="ug-copy-block">
       <h3>Background</h3>
-      <p class="ug-body-copy">[填写研究对象、项目背景与研究动机]</p>
+      <p class="ug-body-copy">[With the rapid development of social economy and the continuous development
+                               of digital technology, scientific, refined and cost-effective spatial information
+                               technology has become the only choice for the integration of social economy and
+                               human information. By combining spatial information technology with the protection
+                               of ancient memorial archway, the protection and utilization of ancient memorial
+                               archway buildings can provide local cultural relics management departments with
+                               new ideas and measures for the protection of ancient memorial archway.]</p>
     </div>
     <div class="ug-copy-block">
       <h3>Objectives</h3>
-      <p class="ug-body-copy">[填写项目目标与希望完成的工作]</p>
+      <p class="ug-body-copy">[As the carrier of the cultural information of the times, the ancient memorial
+                               archway contains ancient folk culture, architectural culture and other information, and
+                               has high historical research and protection value. Jimei Archway in Fengxin County is
+                               the only four pillar and four sided stone memorial archway in Jiangxi Province. Its
+                               profound history and exquisite architectural skills show a high cultural value. Taking
+                               Jimei Archway in Fengxin County as an example, this paper discusses the use of
+                               spatial information technology to digitally display Jimei Archway, and further studies
+                               the application of digital technology in the protection of ancient memorial archways.]</p>
     </div>
   </div>
 </section>
