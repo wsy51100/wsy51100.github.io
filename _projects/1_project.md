@@ -5,6 +5,7 @@ description: with background image
 img: assets/img/12.jpg
 importance: 1
 category: work
+redirect: "https://wsy51100.github.io/Master_Thesis/#abstract"
 related_publications: true
 ---
 
