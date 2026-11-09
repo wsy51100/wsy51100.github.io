@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Leveraging Vision Foundation Models for Semantic Implicit Multi-Sensor SLAM
-description: with background image
+description: Master thesis
 img: assets/img/fig5_vis.jpg
 importance: 1
 category: work
