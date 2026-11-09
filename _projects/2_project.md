@@ -57,6 +57,16 @@ _styles: |
   #mms-project .mms-findings { margin: 0; padding-left: 19px; }
   #mms-project .mms-findings li { margin-bottom: 11px; padding-left: 3px; }
   #mms-project .mms-resource-link { display: inline-block; margin-top: 18px; font-size: 14px; font-weight: 500; }
+  #mms-project .mms-quick-links { display: flex; gap: 12px 22px; flex-wrap: wrap; margin: 20px 0 26px; font-size: 13px; }
+  #mms-project .mms-chapters { margin-top: 24px; }
+  #mms-project .mms-chapter { border-top: 1px solid var(--global-divider-color); padding: 17px 0; scroll-margin-top: 90px; }
+  #mms-project .mms-chapter:last-child { border-bottom: 1px solid var(--global-divider-color); }
+  #mms-project .mms-chapter > summary { cursor: pointer; font-size: 16px; font-weight: 500; line-height: 1.6; }
+  #mms-project .mms-page-range { font-size: 12px; font-weight: 400; color: var(--global-text-color-light); white-space: nowrap; margin-right: 10px; }
+  #mms-project .mms-slide { margin-top: 26px; }
+  #mms-project .mms-slide .mms-image-link { border: 1px solid var(--global-divider-color); }
+  #mms-project .mms-slide figcaption { display: flex; gap: 5px 18px; justify-content: space-between; flex-wrap: wrap; }
+  #mms-project .mms-slide-page { font-variant-numeric: tabular-nums; }
   @media (max-width: 760px) {
     #mms-project .mms-meta { grid-template-columns: minmax(0, 1fr); gap: 15px; }
     #mms-project .mms-meta dd { margin-top: 3px; }
@@ -83,6 +93,11 @@ _styles: |
 </div>
 
 <p class="mms-intro">This team project evaluates kinematic laser scanning against a georeferenced terrestrial laser scanning (TLS) reference. The study covers survey planning, static and kinematic acquisition, point-cloud processing, and geometric comparison at a building survey site in Bonn.</p>
+
+<nav class="mms-quick-links" aria-label="Project resources">
+  <a href="#mms-full-presentation">Browse the complete presentation (40 pages)</a>
+  <a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}" target="_blank" rel="noopener">Open PDF</a>
+</nav>
 
 <!-- 点击图片可打开原始分辨率；两幅图均保留完整比例。 -->
 <div class="mms-pair mms-hero">
@@ -255,4 +270,280 @@ _styles: |
   </div>
 </section>
 
+<section class="mms-section" id="mms-full-presentation">
+  <header class="mms-section-head"><span class="mms-number">07</span><h2>Complete Presentation</h2></header>
+  <div class="mms-section-body">
+    <p>Explore all 40 pages of the original team presentation, including the survey setup, georeferencing, registration, evaluation, conclusion, and appendix. Expand a chapter and select a page to view the full-size image, or open its corresponding PDF page.</p>
+    <p class="mms-source">The project overview above is an edited summary. The pages below reproduce the supplied PDF in its original order.</p>
+    <div class="mms-chapters">
+      <details class="mms-chapter" id="mms-pages-01-02" open>
+        <summary><span class="mms-page-range">Pages 01-02</span> Project Overview</summary>
+        <figure class="mms-slide" id="mms-slide-01">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-01.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 01: Application and Evaluation of Kinematic MSS">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-01.webp' | relative_url }}" alt="Page 01 of 40: Application and Evaluation of Kinematic MSS" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">01 / 40 · Application and Evaluation of Kinematic MSS</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=1" target="_blank" rel="noopener" aria-label="Open PDF at page 1">Open PDF page 01</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-02">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-02.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 02: Outline">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-02.webp' | relative_url }}" alt="Page 02 of 40: Outline" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">02 / 40 · Outline</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=2" target="_blank" rel="noopener" aria-label="Open PDF at page 2">Open PDF page 02</a></figcaption>
+        </figure>
+      </details>
+      <details class="mms-chapter" id="mms-pages-03-04">
+        <summary><span class="mms-page-range">Pages 03-04</span> Scanning Plan</summary>
+        <figure class="mms-slide" id="mms-slide-03">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-03.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 03: Scanning Plan">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-03.webp' | relative_url }}" alt="Page 03 of 40: Scanning Plan" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">03 / 40 · Scanning Plan</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=3" target="_blank" rel="noopener" aria-label="Open PDF at page 3">Open PDF page 03</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-04">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-04.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 04: Scanning Plan">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-04.webp' | relative_url }}" alt="Page 04 of 40: Scanning Plan" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">04 / 40 · Scanning Plan</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=4" target="_blank" rel="noopener" aria-label="Open PDF at page 4">Open PDF page 04</a></figcaption>
+        </figure>
+      </details>
+      <details class="mms-chapter" id="mms-pages-05-15">
+        <summary><span class="mms-page-range">Pages 05-15</span> Static Measurements &amp; Georeferencing</summary>
+        <figure class="mms-slide" id="mms-slide-05">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-05.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 05: Static Part">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-05.webp' | relative_url }}" alt="Page 05 of 40: Static Part" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">05 / 40 · Static Part</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=5" target="_blank" rel="noopener" aria-label="Open PDF at page 5">Open PDF page 05</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-06">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-06.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 06: Instrument introduction">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-06.webp' | relative_url }}" alt="Page 06 of 40: Instrument introduction" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">06 / 40 · Instrument introduction</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=6" target="_blank" rel="noopener" aria-label="Open PDF at page 6">Open PDF page 06</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-07">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-07.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 07: Data Acquisition – Static ">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-07.webp' | relative_url }}" alt="Page 07 of 40: Data Acquisition – Static " width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">07 / 40 · Data Acquisition – Static </span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=7" target="_blank" rel="noopener" aria-label="Open PDF at page 7">Open PDF page 07</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-08">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-08.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 08: Georeferencing – Static">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-08.webp' | relative_url }}" alt="Page 08 of 40: Georeferencing – Static" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">08 / 40 · Georeferencing – Static</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=8" target="_blank" rel="noopener" aria-label="Open PDF at page 8">Open PDF page 08</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-09">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-09.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 09: Georeferencing – Static">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-09.webp' | relative_url }}" alt="Page 09 of 40: Georeferencing – Static" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">09 / 40 · Georeferencing – Static</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=9" target="_blank" rel="noopener" aria-label="Open PDF at page 9">Open PDF page 09</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-10">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-10.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 10: GNSS Processing – GPS 1">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-10.webp' | relative_url }}" alt="Page 10 of 40: GNSS Processing – GPS 1" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">10 / 40 · GNSS Processing – GPS 1</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=10" target="_blank" rel="noopener" aria-label="Open PDF at page 10">Open PDF page 10</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-11">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-11.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 11: GNSS Processing – GPS 2">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-11.webp' | relative_url }}" alt="Page 11 of 40: GNSS Processing – GPS 2" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">11 / 40 · GNSS Processing – GPS 2</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=11" target="_blank" rel="noopener" aria-label="Open PDF at page 11">Open PDF page 11</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-12">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-12.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 12: GNSS Processing – GPS 3">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-12.webp' | relative_url }}" alt="Page 12 of 40: GNSS Processing – GPS 3" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">12 / 40 · GNSS Processing – GPS 3</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=12" target="_blank" rel="noopener" aria-label="Open PDF at page 12">Open PDF page 12</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-13">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-13.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 13: GNSS Processing - Summary">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-13.webp' | relative_url }}" alt="Page 13 of 40: GNSS Processing - Summary" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">13 / 40 · GNSS Processing - Summary</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=13" target="_blank" rel="noopener" aria-label="Open PDF at page 13">Open PDF page 13</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-14">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-14.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 14: Static PCD Registration">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-14.webp' | relative_url }}" alt="Page 14 of 40: Static PCD Registration" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">14 / 40 · Static PCD Registration</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=14" target="_blank" rel="noopener" aria-label="Open PDF at page 14">Open PDF page 14</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-15">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-15.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 15: Georeferenced PCD – Static ">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-15.webp' | relative_url }}" alt="Page 15 of 40: Georeferenced PCD – Static " width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">15 / 40 · Georeferenced PCD – Static </span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=15" target="_blank" rel="noopener" aria-label="Open PDF at page 15">Open PDF page 15</a></figcaption>
+        </figure>
+      </details>
+      <details class="mms-chapter" id="mms-pages-16-21">
+        <summary><span class="mms-page-range">Pages 16-21</span> Kinematic Measurements &amp; Registration</summary>
+        <figure class="mms-slide" id="mms-slide-16">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-16.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 16: Kinematic Part">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-16.webp' | relative_url }}" alt="Page 16 of 40: Kinematic Part" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">16 / 40 · Kinematic Part</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=16" target="_blank" rel="noopener" aria-label="Open PDF at page 16">Open PDF page 16</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-17">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-17.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 17: Instrument introduction">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-17.webp' | relative_url }}" alt="Page 17 of 40: Instrument introduction" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">17 / 40 · Instrument introduction</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=17" target="_blank" rel="noopener" aria-label="Open PDF at page 17">Open PDF page 17</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-18">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-18.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 18: Data Acquisition – Kinematic ">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-18.webp' | relative_url }}" alt="Page 18 of 40: Data Acquisition – Kinematic " width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">18 / 40 · Data Acquisition – Kinematic </span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=18" target="_blank" rel="noopener" aria-label="Open PDF at page 18">Open PDF page 18</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-19">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-19.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 19: Pointcloud Registration - Kinematic">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-19.webp' | relative_url }}" alt="Page 19 of 40: Pointcloud Registration - Kinematic" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">19 / 40 · Pointcloud Registration - Kinematic</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=19" target="_blank" rel="noopener" aria-label="Open PDF at page 19">Open PDF page 19</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-20">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-20.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 20: Pointcloud Registration - Kinematic">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-20.webp' | relative_url }}" alt="Page 20 of 40: Pointcloud Registration - Kinematic" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">20 / 40 · Pointcloud Registration - Kinematic</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=20" target="_blank" rel="noopener" aria-label="Open PDF at page 20">Open PDF page 20</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-21">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-21.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 21: Georeferenced PCD - Kinematic">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-21.webp' | relative_url }}" alt="Page 21 of 40: Georeferenced PCD - Kinematic" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">21 / 40 · Georeferenced PCD - Kinematic</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=21" target="_blank" rel="noopener" aria-label="Open PDF at page 21">Open PDF page 21</a></figcaption>
+        </figure>
+      </details>
+      <details class="mms-chapter" id="mms-pages-22-25">
+        <summary><span class="mms-page-range">Pages 22-25</span> Point-cloud Processing &amp; Georeferenced Results</summary>
+        <figure class="mms-slide" id="mms-slide-22">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-22.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 22: Point Cloud Processing ">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-22.webp' | relative_url }}" alt="Page 22 of 40: Point Cloud Processing " width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">22 / 40 · Point Cloud Processing </span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=22" target="_blank" rel="noopener" aria-label="Open PDF at page 22">Open PDF page 22</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-23">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-23.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 23: Georeferenced PCD – Static ">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-23.webp' | relative_url }}" alt="Page 23 of 40: Georeferenced PCD – Static " width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">23 / 40 · Georeferenced PCD – Static </span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=23" target="_blank" rel="noopener" aria-label="Open PDF at page 23">Open PDF page 23</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-24">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-24.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 24: Georeferenced PCD – Static ">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-24.webp' | relative_url }}" alt="Page 24 of 40: Georeferenced PCD – Static " width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">24 / 40 · Georeferenced PCD – Static </span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=24" target="_blank" rel="noopener" aria-label="Open PDF at page 24">Open PDF page 24</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-25">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-25.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 25: Georeferenced PCD - Kinematic">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-25.webp' | relative_url }}" alt="Page 25 of 40: Georeferenced PCD - Kinematic" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">25 / 40 · Georeferenced PCD - Kinematic</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=25" target="_blank" rel="noopener" aria-label="Open PDF at page 25">Open PDF page 25</a></figcaption>
+        </figure>
+      </details>
+      <details class="mms-chapter" id="mms-pages-26-35">
+        <summary><span class="mms-page-range">Pages 26-35</span> Evaluation</summary>
+        <figure class="mms-slide" id="mms-slide-26">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-26.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 26: Evaluation">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-26.webp' | relative_url }}" alt="Page 26 of 40: Evaluation" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">26 / 40 · Evaluation</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=26" target="_blank" rel="noopener" aria-label="Open PDF at page 26">Open PDF page 26</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-27">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-27.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 27: Evaluation Metrics">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-27.webp' | relative_url }}" alt="Page 27 of 40: Evaluation Metrics" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">27 / 40 · Evaluation Metrics</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=27" target="_blank" rel="noopener" aria-label="Open PDF at page 27">Open PDF page 27</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-28">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-28.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 28: Evaluation- C2C">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-28.webp' | relative_url }}" alt="Page 28 of 40: Evaluation- C2C" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">28 / 40 · Evaluation- C2C</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=28" target="_blank" rel="noopener" aria-label="Open PDF at page 28">Open PDF page 28</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-29">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-29.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 29: Evaluation- C2C">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-29.webp' | relative_url }}" alt="Page 29 of 40: Evaluation- C2C" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">29 / 40 · Evaluation- C2C</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=29" target="_blank" rel="noopener" aria-label="Open PDF at page 29">Open PDF page 29</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-30">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-30.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 30: Evaluation- C2M">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-30.webp' | relative_url }}" alt="Page 30 of 40: Evaluation- C2M" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">30 / 40 · Evaluation- C2M</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=30" target="_blank" rel="noopener" aria-label="Open PDF at page 30">Open PDF page 30</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-31">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-31.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 31: Evaluation- C2M">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-31.webp' | relative_url }}" alt="Page 31 of 40: Evaluation- C2M" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">31 / 40 · Evaluation- C2M</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=31" target="_blank" rel="noopener" aria-label="Open PDF at page 31">Open PDF page 31</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-32">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-32.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 32: Evaluation- M3C2">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-32.webp' | relative_url }}" alt="Page 32 of 40: Evaluation- M3C2" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">32 / 40 · Evaluation- M3C2</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=32" target="_blank" rel="noopener" aria-label="Open PDF at page 32">Open PDF page 32</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-33">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-33.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 33: Evaluation- Plane fitting">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-33.webp' | relative_url }}" alt="Page 33 of 40: Evaluation- Plane fitting" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">33 / 40 · Evaluation- Plane fitting</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=33" target="_blank" rel="noopener" aria-label="Open PDF at page 33">Open PDF page 33</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-34">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-34.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 34: Evaluation- KeyPoints">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-34.webp' | relative_url }}" alt="Page 34 of 40: Evaluation- KeyPoints" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">34 / 40 · Evaluation- KeyPoints</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=34" target="_blank" rel="noopener" aria-label="Open PDF at page 34">Open PDF page 34</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-35">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-35.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 35: Evaluation- KeyPoints">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-35.webp' | relative_url }}" alt="Page 35 of 40: Evaluation- KeyPoints" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">35 / 40 · Evaluation- KeyPoints</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=35" target="_blank" rel="noopener" aria-label="Open PDF at page 35">Open PDF page 35</a></figcaption>
+        </figure>
+      </details>
+      <details class="mms-chapter" id="mms-pages-36-38">
+        <summary><span class="mms-page-range">Pages 36-38</span> Findings &amp; Conclusion</summary>
+        <figure class="mms-slide" id="mms-slide-36">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-36.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 36: Summary of findings">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-36.webp' | relative_url }}" alt="Page 36 of 40: Summary of findings" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">36 / 40 · Summary of findings</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=36" target="_blank" rel="noopener" aria-label="Open PDF at page 36">Open PDF page 36</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-37">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-37.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 37: Conclusion">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-37.webp' | relative_url }}" alt="Page 37 of 40: Conclusion" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">37 / 40 · Conclusion</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=37" target="_blank" rel="noopener" aria-label="Open PDF at page 37">Open PDF page 37</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-38">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-38.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 38: Thank you for your attention!">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-38.webp' | relative_url }}" alt="Page 38 of 40: Thank you for your attention!" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">38 / 40 · Thank you for your attention!</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=38" target="_blank" rel="noopener" aria-label="Open PDF at page 38">Open PDF page 38</a></figcaption>
+        </figure>
+      </details>
+      <details class="mms-chapter" id="mms-pages-39-40">
+        <summary><span class="mms-page-range">Pages 39-40</span> Appendix: Keypoint Details</summary>
+        <figure class="mms-slide" id="mms-slide-39">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-39.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 39: Evaluation- KeyPoints">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-39.webp' | relative_url }}" alt="Page 39 of 40: Evaluation- KeyPoints" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">39 / 40 · Evaluation- KeyPoints</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=39" target="_blank" rel="noopener" aria-label="Open PDF at page 39">Open PDF page 39</a></figcaption>
+        </figure>
+        <figure class="mms-slide" id="mms-slide-40">
+          <a class="mms-image-link" href="{{ '/assets/img/mms-evaluation/slides/slide-40.webp' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size page 40: Evaluation- KeyPoints">
+            <img src="{{ '/assets/img/mms-evaluation/slides/slide-40.webp' | relative_url }}" alt="Page 40 of 40: Evaluation- KeyPoints" width="1800" height="1013" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span class="mms-slide-page">40 / 40 · Evaluation- KeyPoints</span><a href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}#page=40" target="_blank" rel="noopener" aria-label="Open PDF at page 40">Open PDF page 40</a></figcaption>
+        </figure>
+      </details>
+    </div>
+    <a class="mms-resource-link" href="{{ '/assets/pdf/mms-evaluation/presentation.pdf' | relative_url }}" target="_blank" rel="noopener">Open the complete presentation (PDF)</a>
+  </div>
+</section>
+
 </div>
+
