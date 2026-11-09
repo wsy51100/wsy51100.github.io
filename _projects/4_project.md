@@ -86,24 +86,24 @@ _styles: |
   <div class="ug-section-body ug-columns">
     <div class="ug-copy-block">
       <h3>Background</h3>
-      <p class="ug-body-copy">[With the rapid development of social economy and the continuous development
+      <p class="ug-body-copy">With the rapid development of social economy and the continuous development
                                of digital technology, scientific, refined and cost-effective spatial information
                                technology has become the only choice for the integration of social economy and
                                human information. By combining spatial information technology with the protection
                                of ancient memorial archway, the protection and utilization of ancient memorial
                                archway buildings can provide local cultural relics management departments with
-                               new ideas and measures for the protection of ancient memorial archway.]</p>
+                               new ideas and measures for the protection of ancient memorial archway.</p>
     </div>
     <div class="ug-copy-block">
       <h3>Objectives</h3>
-      <p class="ug-body-copy">[As the carrier of the cultural information of the times, the ancient memorial
+      <p class="ug-body-copy">As the carrier of the cultural information of the times, the ancient memorial
                                archway contains ancient folk culture, architectural culture and other information, and
                                has high historical research and protection value. Jimei Archway in Fengxin County is
                                the only four pillar and four sided stone memorial archway in Jiangxi Province. Its
                                profound history and exquisite architectural skills show a high cultural value. Taking
                                Jimei Archway in Fengxin County as an example, this paper discusses the use of
                                spatial information technology to digitally display Jimei Archway, and further studies
-                               the application of digital technology in the protection of ancient memorial archways.]</p>
+                               the application of digital technology in the protection of ancient memorial archways.</p>
     </div>
   </div>
 </section>
@@ -113,19 +113,19 @@ _styles: |
   <header class="ug-section-head"><span class="ug-number">02</span><h2>Data Acquisition</h2></header>
   <div class="ug-section-body ug-data-grid">
     <div class="ug-data-item">
-      <h3>UAV Imagery</h3>
-      <p>[填写无人机与相机设备]</p>
-      <p>[填写影像采集方式 / 数据说明]</p>
+      <h3>UAV</h3>
+      <p>DJI Phantom 4 RTK</p>
+      <p>Oblique Photogrammetry</p>
     </div>
     <div class="ug-data-item">
       <h3>LiDAR</h3>
-      <p>[填写激光雷达设备]</p>
-      <p>[填写点云采集方式 / 数据说明]</p>
+      <p>DJI Matrice 300 RTK with an L1 LiDAR payload</p>
+      <p>Oblique Photogrammetry</p>
     </div>
     <div class="ug-data-item">
       <h3>Ground Photography</h3>
-      <p>[填写地面摄影设备]</p>
-      <p>[填写拍摄方式 / 数据说明]</p>
+      <p>Canon</p>
+      <p>Photograph all sides of the archway and its interior from ground level.</p>
     </div>
   </div>
 </section>
