@@ -114,16 +114,69 @@ _styles: |
       </a>
       <figcaption>Figure 1. Vulnerability and hazard assessment workflow from the supplied English translation. Select the image to view the complete diagram at its original resolution.</figcaption>
     </figure>
-    <details class="b1517-detail">
+    <details class="b1517-detail" id="b1517-entropy">
       <summary>Entropy weighting in six steps</summary>
+      <p style="margin-top:18px;font-size:14px;">Let \(x_{ij}\) denote the original value of indicator \(j\) for sample \(i\), with \(m\) samples and \(n\) indicators. The minimum and maximum for each indicator are taken across all samples.</p>
       <ol>
-        <li>Normalize positively and negatively oriented indicators.</li>
-        <li>Calculate each sample's proportion within each indicator.</li>
-        <li>Calculate the information entropy of each indicator.</li>
-        <li>Calculate information utility from the entropy values.</li>
-        <li>Normalize information utility to obtain indicator weights.</li>
-        <li>Combine the weighted indicator contributions into sample scores.</li>
+        <li>
+          <strong>Normalize positively and negatively oriented indicators.</strong>
+          <p style="margin-top:10px;">For a positively oriented indicator:</p>
+          <div class="b1517-equation" style="max-width:100%;overflow-x:auto;padding:4px 0;">
+            \[
+            z_{ij}=\frac{x_{ij}-\min(x_j)}{\max(x_j)-\min(x_j)}
+            \]
+          </div>
+          <p>For a negatively oriented indicator:</p>
+          <div class="b1517-equation" style="max-width:100%;overflow-x:auto;padding:4px 0;">
+            \[
+            z_{ij}=\frac{\max(x_j)-x_{ij}}{\max(x_j)-\min(x_j)}
+            \]
+          </div>
+        </li>
+        <li>
+          <strong>Calculate each sample's proportion within each indicator.</strong>
+          <div class="b1517-equation" style="max-width:100%;overflow-x:auto;padding:4px 0;">
+            \[
+            p_{ij}=\frac{z_{ij}}{\displaystyle\sum_{r=1}^{m}z_{rj}}
+            \]
+          </div>
+        </li>
+        <li>
+          <strong>Calculate the information entropy of each indicator.</strong>
+          <div class="b1517-equation" style="max-width:100%;overflow-x:auto;padding:4px 0;">
+            \[
+            e_j=-k\sum_{i=1}^{m}p_{ij}\ln(p_{ij})
+            \]
+          </div>
+          <p>The normalization coefficient is \(k=1/\ln m\), with \(m&gt;1\).</p>
+        </li>
+        <li>
+          <strong>Calculate information utility from the entropy values.</strong>
+          <div class="b1517-equation" style="max-width:100%;overflow-x:auto;padding:4px 0;">
+            \[
+            d_j=1-e_j
+            \]
+          </div>
+        </li>
+        <li>
+          <strong>Normalize information utility to obtain indicator weights.</strong>
+          <div class="b1517-equation" style="max-width:100%;overflow-x:auto;padding:4px 0;">
+            \[
+            w_j=\frac{d_j}{\displaystyle\sum_{\ell=1}^{n}d_{\ell}}
+            \]
+          </div>
+        </li>
+        <li>
+          <strong>Combine the weighted indicator contributions into sample scores.</strong>
+          <div class="b1517-equation" style="max-width:100%;overflow-x:auto;padding:4px 0;">
+            \[
+            s_i=\sum_{j=1}^{n}w_jp_{ij}
+            \]
+          </div>
+        </li>
       </ol>
+      <p class="b1517-source"><strong>Symbols.</strong> \(z_{ij}\) is the normalized value; \(p_{ij}\) is the sample proportion within indicator \(j\); \(e_j\), \(d_j\), and \(w_j\) are the indicator entropy, information utility, and weight; \(s_i\) is the composite score for sample \(i\).</p>
+      <p class="b1517-source">Equations follow the main-text formulation of the translated report. The coefficient \(k=1/\ln m\) is specified using the entropy normalization shown in Figure 1. For \(p_{ij}=0\), use \(p_{ij}\ln(p_{ij})=0\). Nonzero indicator ranges and normalization denominators are required.</p>
     </details>
   </div>
 </section>
