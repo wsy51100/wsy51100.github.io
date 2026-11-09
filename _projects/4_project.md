@@ -65,10 +65,10 @@ _styles: |
 
 <!-- 00 项目信息：只替换 dd 标签里面的文字。 -->
 <dl class="ug-meta">
-  <div><dt>Field</dt><dd>[Photogrammetry, 3D reconstruction]</dd></div>
-  <div><dt>Institution</dt><dd>[Jiangxi Normal University]</dd></div>
-  <div><dt>Date</dt><dd>[2023.05]</dd></div>
-  <div><dt>Supervisor</dt><dd>[Hanwu Zhang]</dd></div>
+  <div><dt>Field</dt><dd>Photogrammetry, 3D reconstruction</dd></div>
+  <div><dt>Institution</dt><dd>Jiangxi Normal University</dd></div>
+  <div><dt>Date</dt><dd>2023.05</dd></div>
+  <div><dt>Supervisor</dt><dd>Hanwu Zhang</dd></div>
 </dl>
 
 <!-- 主图：后续只将 ug-figure-placeholder 这个 div 替换为 img，保留 figure 与 figcaption。 -->
