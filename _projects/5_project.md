@@ -82,8 +82,7 @@ _styles: |
 </dl>
 <div class="b1517-team">
   <p class="b1517-label">Team B1517</p>
-  <p class="b1517-team-names">郑乐然 · 吴淑仪 (Shuyi Wu) · 李佳媛 · 栾鹿鸣</p>
-  <p class="b1517-team-context">School of Geography and Environment, Jiangxi Normal University · Advisor: 胡碧松</p>
+  <p class="b1517-team-context">School of Geography and Environment, Jiangxi Normal University · Advisor: Bisong Hu</p>
 </div>
 
 <section class="b1517-section" id="b1517-overview">
