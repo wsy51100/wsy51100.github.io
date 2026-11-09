@@ -261,63 +261,7 @@ _styles: |
   </div>
 </section>
 
-<!-- 04 建模方法：左文右图，手机上自动上下排列。 -->
-<section class="ug-section" id="ug-reconstruction">
-  <header class="ug-section-head"><span class="ug-number">04</span><h2>3D Reconstruction</h2></header>
-  <div class="ug-section-body ug-columns">
-    <div class="ug-copy-block ug-detail-copy">
-      <h3>Method</h3>
-      <p class="ug-body-copy">[填写实际采用的重建方法与主要处理步骤]</p>
-      <p class="ug-body-copy">[填写软件、关键设置或你希望重点介绍的处理过程]</p>
-    </div>
-    <figure>
-      <div class="ug-figure-placeholder">
-        <span>Reconstruction detail</span>
-        <p>[图片位置：网格 / 纹理 / 中间处理结果]</p>
-      </div>
-      <figcaption>[填写建模过程图说明]</figcaption>
-    </figure>
-  </div>
-</section>
 
-<!-- 05 成果展示：两张并排图片。 -->
-<section class="ug-section" id="ug-results">
-  <header class="ug-section-head"><span class="ug-number">05</span><h2>Visualization &amp; Results</h2></header>
-  <div class="ug-section-body">
-    <p class="ug-body-copy">[填写最终模型、可视化场景与展示结果的说明]</p>
-    <div class="ug-columns ug-figure-stack">
-      <figure>
-        <div class="ug-figure-placeholder">
-          <span>Result view A</span>
-          <p>[图片位置：实景 / 场景全貌]</p>
-        </div>
-        <figcaption>[填写第一张成果图说明]</figcaption>
-      </figure>
-      <figure>
-        <div class="ug-figure-placeholder">
-          <span>Result view B</span>
-          <p>[图片位置：重建细节 / 渲染效果]</p>
-        </div>
-        <figcaption>[填写第二张成果图说明]</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- 06 个人贡献与总结 -->
-<section class="ug-section" id="ug-contribution">
-  <header class="ug-section-head"><span class="ug-number">06</span><h2>Contribution &amp; Takeaways</h2></header>
-  <div class="ug-section-body ug-columns">
-    <div class="ug-copy-block">
-      <h3>My Contribution</h3>
-      <p class="ug-body-copy">[填写本人负责的具体工作]</p>
-    </div>
-    <div class="ug-copy-block">
-      <h3>Takeaways</h3>
-      <p class="ug-body-copy">[填写项目收获、总结与后续方向]</p>
-    </div>
-  </div>
-</section>
 
 <!-- 可选资源区：如需展示，删除下面 section 标签中的 hidden。随后填写真实资源链接。 -->
 <section class="ug-resources" hidden>
