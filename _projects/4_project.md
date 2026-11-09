@@ -73,12 +73,31 @@ _styles: |
 
 <!-- 主图：后续只将 ug-figure-placeholder 这个 div 替换为 img，保留 figure 与 figcaption。 -->
 <figure>
-  <div class="ug-figure-placeholder ug-hero">
-    <span>Main visual</span>
-    <p>[主图位置：项目总览 / 三维重建全景]</p>
-  </div>
-  <figcaption>[填写主图说明]</figcaption>
+  <video
+    autoplay
+    loop
+    muted
+    playsinline
+    controls
+    preload="metadata"
+    aria-label="济美牌坊三维模型动态展示"
+    style="display:block;width:100%;height:auto;border-radius:8px;">
+    <source src="{{ '/assets/video/ug-thesis/jimei-model.mp4' | relative_url }}" type="video/mp4">
+    Your browser does not support embedded video.
+  </video>
+  <figcaption>Visualization of Jimei Archway in Open3D</figcaption>
 </figure>
+
+<figure class="ug-figure-stack">
+  <img
+    src="{{ '/assets/img/ug-thesis/overview_fig1.jpg' | relative_url }}"
+    alt="济美牌坊三维模型及局部细节"
+    width="1960"
+    height="1109"
+    loading="lazy">
+  <figcaption>Details of Jimei Archway</figcaption>
+</figure>
+
 
 <!-- 01 背景与目标 -->
 <section class="ug-section" id="ug-background">
