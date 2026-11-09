@@ -58,6 +58,52 @@ _styles: |
     #ug-thesis .ug-figure-placeholder.ug-flow { aspect-ratio: 4 / 3; }
     #ug-thesis .ug-data-item { padding: 17px; }
   }
+  #ug-workflow { --ugwf-accent: #af822d; }
+  html[data-theme="dark"] #ug-workflow { --ugwf-accent: #c9a65e; }
+  #ug-workflow .ugwf-diagram { margin-top: 26px; }
+  #ug-workflow .ugwf-node { display: flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 12px; border: 1px solid var(--ugwf-accent); background: var(--global-card-bg-color); color: var(--global-text-color); font-size: 13px; line-height: 1.5; text-align: center; overflow-wrap: anywhere; }
+  #ug-workflow .ugwf-major { font-weight: 500; font-size: 15px; }
+  #ug-workflow .ugwf-root { position: relative; max-width: 260px; margin: 0 auto 32px; }
+  #ug-workflow .ugwf-root::after { content: ""; position: absolute; left: 50%; bottom: -17px; height: 16px; border-left: 1px solid var(--ugwf-accent); }
+  #ug-workflow .ugwf-branches { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+  #ug-workflow .ugwf-branches::before { content: ""; position: absolute; top: -16px; left: calc(25% - 8px); right: calc(25% - 8px); border-top: 1px solid var(--ugwf-accent); }
+  #ug-workflow .ugwf-branch { position: relative; min-width: 0; }
+  #ug-workflow .ugwf-branch::before { content: ""; position: absolute; top: -16px; height: 16px; left: 50%; border-left: 1px solid var(--ugwf-accent); }
+  #ug-workflow h3.ugwf-node { margin: 0; }
+  #ug-workflow .ugwf-fieldwork-list { position: relative; list-style: none; margin: 20px 0 0 8px; padding: 0 0 0 16px; border-left: 1px solid var(--ugwf-accent); }
+  #ug-workflow .ugwf-fieldwork-list::before { content: ""; position: absolute; left: -1px; top: -20px; width: calc(50% - 4px); height: 19px; border-right: 1px solid var(--ugwf-accent); border-bottom: 1px solid var(--ugwf-accent); }
+  #ug-workflow .ugwf-fieldwork-list li { position: relative; margin: 0 0 12px; padding: 0; }
+  #ug-workflow .ugwf-fieldwork-list li:last-child { margin-bottom: 0; }
+  #ug-workflow .ugwf-fieldwork-list li::before { content: ""; position: absolute; top: 50%; left: -17px; width: 17px; border-top: 1px solid var(--ugwf-accent); }
+  #ug-workflow .ugwf-arrow { display: block; height: 24px; color: var(--ugwf-accent); line-height: 24px; text-align: center; font-size: 17px; }
+  #ug-workflow .ugwf-model { border: 1px dashed var(--global-divider-color); padding: 14px; }
+  #ug-workflow .ugwf-inputs { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; padding-bottom: 18px; }
+  #ug-workflow .ugwf-inputs .ugwf-node { position: relative; min-height: 62px; font-size: 12px; padding: 8px 5px; }
+  #ug-workflow .ugwf-inputs .ugwf-node::after { content: ""; position: absolute; left: 50%; bottom: -19px; height: 18px; border-left: 1px solid var(--ugwf-accent); }
+  #ug-workflow .ugwf-inputs::after { content: ""; position: absolute; left: calc((100% - 20px) / 6); right: calc((100% - 20px) / 6); bottom: 0; border-top: 1px solid var(--ugwf-accent); }
+  #ug-workflow .ugwf-steps { list-style: none; margin: 0; padding: 0; }
+  #ug-workflow .ugwf-steps li { margin: 0; padding: 0; }
+  #ug-workflow .ugwf-preparation { margin-top: 27px; padding-top: 18px; border-top: 1px solid var(--global-divider-color); }
+  #ug-workflow .ugwf-preparation h3 { font-size: 15px; margin: 0 0 10px; }
+  #ug-workflow .ugwf-preparation p { font-size: 13px; line-height: 1.8; color: var(--global-text-color); }
+  #ug-workflow .ugwf-terms { margin-top: 18px; font-size: 12px; line-height: 1.7; }
+  #ug-workflow .ugwf-terms > div { display: flex; align-items: baseline; gap: 8px; margin-top: 5px; }
+  #ug-workflow .ugwf-terms dt { flex: 0 0 29px; color: var(--global-text-color); font-weight: 500; }
+  #ug-workflow .ugwf-terms dd { color: var(--global-text-color-light); }
+  #ug-workflow .ugwf-caption { font-size: 12px; color: var(--global-text-color-light); line-height: 1.7; margin-top: 17px; }
+  @media (max-width: 760px) {
+    #ug-workflow .ugwf-branches { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+    #ug-workflow .ugwf-branches::before, #ug-workflow .ugwf-branch::before { display: none; }
+    #ug-workflow .ugwf-root { margin-bottom: 24px; }
+    #ug-workflow .ugwf-root::after { height: 24px; bottom: -25px; }
+    #ug-workflow .ugwf-node { font-size: 13px; }
+    #ug-workflow .ugwf-major { font-size: 15px; }
+    #ug-workflow .ugwf-model { padding: 10px; }
+    #ug-workflow .ugwf-inputs { gap: 7px; }
+    #ug-workflow .ugwf-inputs .ugwf-node { font-size: 12px; }
+    #ug-workflow .ugwf-inputs::after { left: calc((100% - 14px) / 6); right: calc((100% - 14px) / 6); }
+  }
+  #ug-workflow .ugwf-expansion-link { display: block; width: 0; height: 22px; margin: 0 auto; border-left: 1px solid var(--ugwf-accent); }
 ---
 
 <!-- 编辑提示：先填写所有 [填写...]；页面样式位于上方 _styles 中。 -->
@@ -153,14 +199,65 @@ _styles: |
 <section class="ug-section" id="ug-workflow">
   <header class="ug-section-head"><span class="ug-number">03</span><h2>Workflow</h2></header>
   <div class="ug-section-body">
-    <p class="ug-body-copy">[填写对整体技术流程的简短说明]</p>
-    <figure class="ug-figure-stack">
-      <div class="ug-figure-placeholder ug-flow">
-        <span>Workflow diagram</span>
-        <p>[流程图位置：采集 → 处理 → 重建 → 展示]</p>
+    <p class="ug-body-copy">Field acquisition was followed by data screening, reconstruction, and export. After unsuitable photographs were removed, image correspondences, camera parameters, and positioning information provided the basis for estimating the scene geometry and producing a textured model.</p>
+
+    <div class="ugwf-diagram" role="group" aria-label="Research workflow, with fieldwork tasks and a sequential 3D reconstruction pipeline">
+      <div class="ugwf-node ugwf-major ugwf-root">Research workflow</div>
+
+      <div class="ugwf-branches">
+        <div class="ugwf-branch">
+          <h3 class="ugwf-node ugwf-major">Fieldwork</h3>
+          <ul class="ugwf-fieldwork-list" aria-label="Fieldwork tasks">
+            <li><div class="ugwf-node">Survey planning</div></li>
+            <li><div class="ugwf-node">Site reconnaissance</div></li>
+            <li><div class="ugwf-node">Survey equipment selection</div></li>
+            <li><div class="ugwf-node">Auxiliary scanning equipment</div></li>
+            <li><div class="ugwf-node">Personnel and equipment coordination</div></li>
+            <li><div class="ugwf-node">On-site scanning and photography</div></li>
+          </ul>
+
+          <aside class="ugwf-preparation">
+            <h3>Data preparation</h3>
+            <p>Blurred, overexposed, and irrelevant photographs were removed. Camera metadata were checked, and images were grouped by shared camera parameters, preparing a consistent image set for aerotriangulation.</p>
+            <dl class="ugwf-terms">
+              <div><dt>TIN</dt><dd>Triangulated irregular network.</dd></div>
+              <div><dt>POS</dt><dd>Position and orientation system.</dd></div>
+            </dl>
+          </aside>
+        </div>
+
+        <div class="ugwf-branch">
+          <h3 class="ugwf-node ugwf-major">Data processing</h3>
+          <span class="ugwf-arrow" aria-hidden="true">↓</span>
+          <div class="ugwf-node">Data preprocessing</div>
+          <span class="ugwf-arrow" aria-hidden="true">↓</span>
+          <div class="ugwf-node ugwf-major">3D reconstruction</div>
+          <span class="ugwf-expansion-link" aria-hidden="true"></span>
+
+          <div class="ugwf-model" role="group" aria-label="Expanded reconstruction stages">
+            <div class="ugwf-inputs" role="group" aria-label="Three inputs to aerotriangulation">
+              <div class="ugwf-node">Raw imagery</div>
+              <div class="ugwf-node">Camera parameter files</div>
+              <div class="ugwf-node">POS files</div>
+            </div>
+            <span class="ugwf-arrow" aria-hidden="true">↓</span>
+            <ol class="ugwf-steps" aria-label="Reconstruction processing order">
+              <li><div class="ugwf-node">Aerotriangulation</div></li>
+              <li><span class="ugwf-arrow" aria-hidden="true">↓</span><div class="ugwf-node">Dense multi-view image matching</div></li>
+              <li><span class="ugwf-arrow" aria-hidden="true">↓</span><div class="ugwf-node">3D TIN mesh generation</div></li>
+              <li><span class="ugwf-arrow" aria-hidden="true">↓</span><div class="ugwf-node">Untextured 3D model generation</div></li>
+              <li><span class="ugwf-arrow" aria-hidden="true">↓</span><div class="ugwf-node">Automatic texture mapping</div></li>
+              <li><span class="ugwf-arrow" aria-hidden="true">↓</span><div class="ugwf-node">3D scene generation</div></li>
+            </ol>
+          </div>
+
+          <span class="ugwf-arrow" aria-hidden="true">↓</span>
+          <div class="ugwf-node ugwf-major">Export and sharing of 3D results</div>
+        </div>
       </div>
-      <figcaption>[填写流程图说明]</figcaption>
-    </figure>
+    </div>
+
+    <p class="ugwf-caption">Research workflow from field acquisition and data preparation to textured 3D reconstruction and the export of digital results.</p>
   </div>
 </section>
 
