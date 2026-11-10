@@ -24,3 +24,5 @@ Hi, I am Shuyi Wu. I am currently pursuing an M.Sc. in Geodetic Engineering at t
 This website brings together my selected projects, publications,
 and photography. Outside my academic work, I enjoy exploring
 places and everyday moments through my camera.
+
+{% include home-selected.liquid %}
