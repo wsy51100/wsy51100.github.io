@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "From Robot LiDAR Scans to Pose Tracking"
+title: "Robot Pose Estimation using Implicit Neural SDF Maps"
 description: ""
 img: assets/img/lidar-sdf-selected/overview-meshes.png
 importance: 3
