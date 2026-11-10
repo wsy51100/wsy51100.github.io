@@ -1,6 +1,6 @@
 ---
 layout: page
-title: “Monitoring Pine Wilt Disease-Infected Trees Using UAV Remote Sensing and Deep Learning Algorithms"
+title: Monitoring Pine Wilt Disease-Infected Trees Using UAV Remote Sensing and Deep Learning Algorithms
 description: "UAV imagery, deep learning and forest-mask postprocessing for infected-tree mapping in southern Jiangxi."
 img: assets/img/pine-wilt-en/figures/cover.webp
 importance: 4
