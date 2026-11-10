@@ -67,7 +67,8 @@ _styles: |
 
 <div id="pine-wilt-english">
 <dl class="pw-meta">
-  <div><dt>Context</dt><dd>Undergraduate team project · D626</dd></div>
+  <div><dt>Context</dt><dd>D626, 2022 ESRI Cup China Collegiate GIS Software Development Competition
+</dd></div>
   <div><dt>Institution</dt><dd>Jiangxi Normal University</dd></div>
   <div><dt>Recognition</dt><dd>Thrid Prize</dd></div>
 </dl>
