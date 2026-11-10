@@ -76,7 +76,7 @@ _styles: |
 </nav>
 
 <dl class="b1517-meta">
-  <div><dt>Project</dt><dd>B1517 · 2022</dd></div>
+  <div><dt>Project</dt><dd>B1517, 2022 ESRI Cup China Collegiate GIS Software Development Competition</dd></div>
   <div><dt>Recognition</dt><dd>First Prize</dd></div>
   <div><dt>Spatial resolution</dt><dd>1,000 m × 1,000 m grid</dd></div>
 </dl>
