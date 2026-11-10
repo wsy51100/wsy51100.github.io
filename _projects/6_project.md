@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "UAV Monitoring of Pine Wilt Disease"
+title: “Monitoring Pine Wilt Disease-Infected Trees Using UAV Remote Sensing and Deep Learning Algorithms"
 description: "UAV imagery, deep learning and forest-mask postprocessing for infected-tree mapping in southern Jiangxi."
 img: assets/img/pine-wilt-en/figures/cover.webp
 importance: 4
@@ -69,10 +69,9 @@ _styles: |
 <dl class="pw-meta">
   <div><dt>Context</dt><dd>Undergraduate team project · D626</dd></div>
   <div><dt>Institution</dt><dd>Jiangxi Normal University</dd></div>
-  <div><dt>Study area</dt><dd>Ganzhou, southern Jiangxi, China</dd></div>
+  <div><dt>Recognition</dt><dd>Thrid Prize</dd></div>
 </dl>
 <div class="pw-team">
-  <p><strong>Team:</strong> Sun Zhenghe · Zheng Leran · Wu Shuyi · Zheng Yajie</p>
   <p><strong>Advisers:</strong> Xu Jian · Huang Shiming</p>
   <p>School of Geography and Environment, Jiangxi Normal University</p>
 </div>
